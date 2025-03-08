@@ -1,0 +1,135 @@
+
+.main-header{
+    background-color: steelblue;
+}
+
+.h1-header{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-header a:hover{
+    color: goldenrod;
+    font-weight: 800;
+    text-decoration:underline;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 1220px;
+    margin: 0 auto;
+    
+
+}
+
+
+
+.section1{
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 15px;
+    padding-top: -5px;
+    padding-left: 10px;
+}
+
+.section-1-child{
+    margin: 20px;
+}
+
+
+.section2{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-top: -5;
+}
+
+.h2-header{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: -1px;
+    margin-left: -10px;
+    padding: 5px;
+}
+
+
+.figure1 img{
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-right: 70px;
+}
+
+.figure2{
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.figure2 img{
+    width: 135px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.line{
+    margin-top: 1px;
+    margin-right: 35%;
+    margin-left: 40px;
+
+}
+
+.my-name{
+    margin-left: 25%;
+    
+}
+
+.figure2p{
+    padding: 25px;    
+}
+
+.h2-web{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: -1px;
+    padding: 5px;
+}
+
+.web-link{
+    margin-top: 54%;
+    padding-bottom: 20px;  
+}
+
+.web-link li{
+    padding-top: -209;
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: steelblue;
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
