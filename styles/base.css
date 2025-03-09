@@ -86,9 +86,9 @@
 }
 
 .figure2 img{
-    width: 135px;
+    width: 200px;
     border: 1px solid black;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .line{
@@ -117,13 +117,13 @@
 }
 
 .web-link{
-    margin-top: 54%;
+    margin-top: 30%;
     padding-bottom: 20px;  
 }
 
 .web-link li{
-    padding-top: -209;
-    padding-bottom: 20px;
+    margin-top: -60px;
+    padding: 50px;
 }
 
 footer{
