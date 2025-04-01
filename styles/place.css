@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #0f9c0f;;
+    --primary-color: #0f9c0f;
     --secondary-color: #ffffff;
     --text-color: #004d00;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0 auto;
     background-color: var(--secondary-color);
 }
@@ -21,7 +21,10 @@ header, footer {
 }
 
 footer{
-    padding: 10px;
+    background-color: #0b520b;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -64px;
 }
 
 
@@ -47,7 +50,7 @@ section #hero{
 }
 
 #hero img {
-   width: 100%
+   width: 100%;
    height: auto;
    border-bottom: 8px solid var(--primary-color);
 }
@@ -113,9 +116,9 @@ section #hero{
         background-color: #0b520b;
         color: rgb(184, 170, 170);
         padding: 10px;
-        margin-top: 5px;
+        margin-top: -5px;
         margin-right: 12px;
-        margin-left: -4px;
+        margin-left: -13px;
     }
 
 
