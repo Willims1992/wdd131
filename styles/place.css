@@ -47,9 +47,10 @@ section #hero{
 }
 
 #hero img {
-   width: 100%;
-    height: auto;
-    border-bottom: 8px solid var(--primary-color);
+   /*width: 100%;*/
+   width: 1000px;
+   height: auto;
+   border-bottom: 8px solid var(--primary-color);
 }
 
 #section {
