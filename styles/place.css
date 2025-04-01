@@ -24,7 +24,7 @@ footer{
     background-color: #0b520b;;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: -64px;
+    margin-top: -82px;
 }
 
 
@@ -61,6 +61,11 @@ section #hero{
 
 .icon img{
     display: none;
+}
+
+#weather{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 #section {
@@ -105,8 +110,8 @@ section #hero{
         opacity: 90%; 
         width: 200px;
         position: absolute;
-        right: 25px;
-        bottom: 50px;
+        right: -20px;
+        bottom: 65px;
         height: 250px;
         margin-left: 700px;
         padding: 10px;
