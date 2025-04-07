@@ -8,9 +8,12 @@ body {
 
 header, footer {
     background-color: #4c566a;
-    color: #cacacd;
     text-align: center;
     padding: 1rem;
+}
+
+.foot p{
+    color: white;
 }
 
 .hder{
@@ -99,7 +102,7 @@ img {
 h1{
     text-align: left;
     margin-top: 5px;
-    color: rgb(241, 174, 4);
+    color: yellow;
 }
 
 .temple-card {
