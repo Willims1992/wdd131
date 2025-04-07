@@ -1,0 +1,38 @@
+
+@media screen and (min-width: 660px) {
+    .grid-section{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    body {
+      max-width: 900px;
+      border: 1px solid #4c566a;
+      
+  }
+  
+  header, footer {
+      max-width: 1400px;
+      margin: 0 auto;
+    
+  }
+  
+  #menu{
+    display: none;
+  }
+  
+  .navigation{
+    display: flex;
+    justify-content: right;
+  }
+  
+  .navigation ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -60px;
+      justify-content: right;
+    
+      
+  }
+   
+  }
+  

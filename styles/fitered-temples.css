@@ -1,0 +1,126 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #cacacd;
+    color: #333;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #4c566a;
+    color: #cacacd;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hder{
+    text-align: center;
+    color: #4c566a;
+
+}
+
+/* Hamburger menu */
+button#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #cacacd;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+button#menu::before {
+    content: "\2261"; /* Hamburger Icon */
+    border: 2px  solid gold 
+}
+
+button#menu.open::before {
+    content: "✖"; /* Close Icon */
+    color: gold;
+    border: 2px solid #bbb;
+
+}
+
+.navigation {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Hidden by default */
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: bold;
+}    
+.navigation.open {
+    display: block; /* Show when open */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation a {
+    color: #cacacd;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    display:  block;
+    transition: all 0.3s ease;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1{
+    text-align: left;
+    margin-top: 5px;
+    color: rgb(241, 174, 4);
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: /*#f9f9f9;*/#cacacd;;
+  }
+  
+  .temple-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+
+
+
+
+
+
+
