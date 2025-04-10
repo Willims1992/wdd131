@@ -1,18 +1,19 @@
 /* Styling using selected color schema and typography */
 :root{
-    --primary-color: #2b7a78;
+    --primary-color: #005f5f;
     --secondary-color: #ff6b6b;
     --accent-color: #f5f5f5;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.6;
     background-color: #f4f9f4; /* Light green background for a wellness vibe */
-    color: #333; /* Dark grey text for readability */
-    max-width: 1200px;
+    color: black; /* Dark grey text for readability */
+    max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+    border: 2px solid black;
     background-color: var(--accent-color)
 }
 
@@ -22,7 +23,7 @@ header, footer{
     background-color: var(--primary-color);
     color: white;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
  
 h2, h3{
