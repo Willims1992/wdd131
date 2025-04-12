@@ -4,7 +4,7 @@
     --accent-color: #b0b0b0;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 20px;
     line-height: 1;
 
@@ -18,6 +18,7 @@ main{
 
 header{
     background-color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
     color: white;
     max-width: 390px;
     text-align: center;
@@ -69,6 +70,10 @@ input, textarea, select{
     border: 1px solid white;
     border-radius: 5px;
     font-size: 1em;
+}
+
+.username{
+    color: black;
 }
 
 .submit-button:hover{
