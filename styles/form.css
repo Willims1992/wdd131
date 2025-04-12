@@ -46,6 +46,23 @@ label{
     font-weight: bold;
 }
 
+.rating {
+    display: flex;
+    gap: 10px;
+}
+/* Styling for the stars above the radio buttons */
+.rating label {
+    display: flex;
+    flex-direction: column; /* Stack stars on top of the radio buttons */
+    align-items:center ;
+    margin-bottom: 10px; /* Add spacing between each option */
+}
+
+.rating label input {
+    margin-top: 5px; /* Add spacing below stars */
+}
+
+
 fieldset{
     border: none;
     padding: 0;
@@ -71,7 +88,20 @@ input, textarea, select{
     border-radius: 5px;
     font-size: 1em;
 }
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
 
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin: 23px;
+}
 .username{
     color: black;
 }
