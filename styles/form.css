@@ -1,7 +1,7 @@
 :root{
     --primary-color: #005f5f;
-    --secondary-color: #f71a1a;
-    --accent-color: #dbd8d8;
+    --secondary-color: #fc0606;
+    --accent-color: #b0b0b0;
 }
 body {
     font-family: Arial, sans-serif;
@@ -54,7 +54,7 @@ fieldset{
 legend{
     font-size: 0.9em;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: black;
     margin-bottom: 0.5em;
 }
 
