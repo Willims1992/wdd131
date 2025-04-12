@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Confirmation</title>
+</head>
+<body>
+    <h1>Thank You for Your Review!</h1>
+    <p>Your feedback is highly appreciated.</p>
+    <script>
+        const counterKey = "reviewCount";
+        let reviewCount = parseInt(localStorage.getItem(counterKey)) || 0;
+
+        reviewCount++;
+        localStorage.setItem(counterKey, reviewCount);
+
+        document.body.innerHTML += `<p>You have successfully completed ${reviewCount} reviews.</p>`;
+    </script>
+</body>
+</html>
