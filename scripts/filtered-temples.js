@@ -97,7 +97,7 @@ const temples = [
       dedicated: "under construction",
       area: "40500",
       imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-57534.jpg"
-    }
+    },
     
     // Add more temple objects here...
 ];

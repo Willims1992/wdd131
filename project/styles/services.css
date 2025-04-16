@@ -1,0 +1,202 @@
+:root{
+    --primary-color: #005f5f;
+    --secondary-color: #ff6b6b;
+   --accent-color: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--accent-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+       
+}
+
+.logo img{
+    width: 150px;
+    border-radius: 50px;
+}
+
+button#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+
+#menu{
+    display: none;
+}
+
+button#menu::before {
+    content: "\2261"; /* Hamburger Icon */
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    color: var(--accent-color);
+}
+button#menu.open::before {
+    content: "✖"; /* Close Icon */
+    color: var(--accent-color);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: bold;
+  }
+
+.nav-links a:hover {
+    background-color: var(--accent-color);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+  
+
+.service {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    transform: 0.3 ease;
+    box-shadow: 0.3 ease;
+    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
+    transition: tra;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../image/pexels-yaroslav-shuraev-8845070.jpg ) ;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+
+
+
+.service a{
+    background-color: var(--accent-color);
+    padding: 15px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+
+}
+
+.service a:hover{
+    background-color: #005f5f;
+    color: var(--accent-color);
+}
+
+
+.service-container h2{
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 40px;
+}
+
+.grid-section{
+        display: grid; /* Enables grid layout */
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive column sizes */
+        gap: 20px; /* Adds spacing between grid items */
+        padding: 20px; /* Adds padding around the grid */
+        justify-content: center; /* Centers the grid horizontally */
+        margin-bottom: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    button#menu {
+       display: inline-block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        padding: 10px;
+        position: absolute;
+        right: 15px;
+        left: 5px;
+        top: 100px;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a{
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+        color: var(--primary-color);
+    }
+
+    .nav-links a:hover {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.open {
+        display: flex; /* Show when open */
+    }
+}    
+/* Responsive Styles */
+/* Media Queries */
+
+     
