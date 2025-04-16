@@ -21,21 +21,25 @@ const servicesData = [
       title: "Mental Wellness",
       description: "Access resources and support for mental health.",
       imageUrl: "https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600",
+      link: "#", // Example link
     },
     {
       title: "Fitness Routines",
       description: "Find personalized fitness plans and tips.",
       imageUrl: "https://images.pexels.com/photos/31628657/pexels-photo-31628657/free-photo-of-man-in-black-sportswear-posing-at-gym.jpeg?auto=compress&cs=tinysrgb&w=600",
+      link: "#", // Example link
     },
     {
       title: "Nutritional Advice",
       description: "Get expert advice on healthy eating.",
       imageUrl: "https://images.pexels.com/photos/5816286/pexels-photo-5816286.jpeg?auto=compress&cs=tinysrgb&w=600",
+      link: "#", // Example link
     },
   
     {title: "Virtual Healthcare",
     description: "Connect with healthcare professionals online.",
     imageUrl: "https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=600",
+    link: "#", // Example link
    },
 
 ];
@@ -66,6 +70,13 @@ servicesData.forEach((service) => {
   const serviceDescription = document.createElement('p');
   serviceDescription.textContent = service.description;
   serviceCard.appendChild(serviceDescription);
+
+  // Create and add "Learn More" button with unique links
+  const serviceButton = document.createElement('a');
+  serviceButton.href = service.link; // Add unique link for each service
+  serviceButton.textContent = "Learn More";
+  serviceButton.classList.add('service-button');
+  serviceCard.appendChild(serviceButton);
 
   // Append card to the container
   servicesContainer.appendChild(serviceCard);

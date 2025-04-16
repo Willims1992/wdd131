@@ -60,10 +60,9 @@ button#menu.open::before {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: white;
     padding: 0.5rem 1rem;
     display: block;
-    font-weight: bold;
   }
 
 .nav-links a:hover {
