@@ -14,28 +14,56 @@ body {
 
 header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
+    top: 0;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    z-index: 2000;
+    width: 100%;
+    height: 150px;
     color: white;
-    padding: 10px 20px;
-       
+    padding: 10px 20px;       
 }
 
+.custom-hr{
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 2rem 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 128, 128, 0.4);
+}
+
+
+
+.logo{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+
 .logo img{
-    width: 150px;
+    width: 130px;
+    border: 5px solid var(--primary-color);
     border-radius: 100px;
+}
+
+.logo h1{
+    padding-top: 19px;
+    color: var(--primary-color);
 }
 
 
 button#menu {
-    font-size: 1.5rem;
+    font-size: 2rem;
     background: none;
     border: none;
     color: white;
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 1rem;
+    margin-left: 20px;
 }
 
 #menu{
@@ -47,26 +75,30 @@ button#menu::before {
     padding: 10px;
     font-size: larger;
     font-weight: bolder;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 button#menu.open::before {
     content: "✖"; /* Close Icon */
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 .nav-links {
     list-style: none;
     display: flex;
     flex-wrap:wrap ;
     justify-content: center;
-    gap: 30px;
+    gap: 5px;
 }
 
 .nav-links a {
     text-decoration: none;
+    background-color: var(--primary-color);
     color: var(--accent-color);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     display: block;
+    margin-right: 20px;
     font-weight: bold;
+    font-size: 19px;
+    border-radius: 20px;
   }
 
 .nav-links a:hover {
@@ -87,6 +119,7 @@ button#menu.open::before {
     background-color: var(--accent-color);
     color: white;
     text-align: center;
+    padding-top: 150px;
     padding: 50px 20px;
 } 
 
@@ -94,6 +127,7 @@ button#menu.open::before {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    
     filter: brightness(0.8); /* Darkens the image */
     
 }
@@ -101,11 +135,15 @@ button#menu.open::before {
 .hero-overlay h2{
     position: absolute;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
     padding: 20px;
-    top: 10%;
-    left: 10px;
+    top: 20%;
+    left: 60px;
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
 
 .hero-overlay a{
     font-weight: bolder;
@@ -360,6 +398,9 @@ footer p {
 @media (max-width: 500px) {
    button#menu {
       display: inline-block;
+      right: 30px;
+      top: 20px;
+      font-size: 2rem;
     }
 
     .services-container {
@@ -367,8 +408,13 @@ footer p {
         grid-template-columns: 1fr; /* Single column for mobile */
         gap: 1rem;
     }
-    
 
+    .hero-overlay h2 {
+        top: 20%;
+        left: 30px;
+        font-size: 1.2rem; /* Adjust font size */
+    
+    }
     .grid-c-2{
         grid-template-columns: 1fr;
     }
@@ -391,6 +437,7 @@ footer p {
     }
 
     .nav-links a{
+        background-color: var(--accent-color);
         padding: 10px 15px;
         margin: 5px 0;
         border-radius: 5px;
@@ -407,6 +454,15 @@ footer p {
     .nav-links.open {
         display: flex; /* Show when open */
     }
+
+    .hero-overlay h2{
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 8px;
+        left: 20px;
+    }
+    
+
 }    
 /* Responsive Styles */
 /* Media Queries */
