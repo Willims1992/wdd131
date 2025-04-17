@@ -164,7 +164,7 @@ button#menu.open::before {
     padding: 30px;
     margin-top: 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     display: inline-block
 }
 
@@ -184,7 +184,7 @@ button#menu.open::before {
 
 .quick-links{
     background-color: var(--accent-color);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     margin: 20px;
