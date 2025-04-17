@@ -4,68 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtual Health Hubs - Blog</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Explore the latest tips, guides, and stories to inspire your journey to better health and wellness.">
+  <meta name="author" content="Ofonime A. William">
+  <link rel="stylesheet" href="styles/blog.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="scripts/blog.js" defer></script>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="logo">
-      <h1>Virtual Health Hubs</h1>
+        <img src="image/ca6da311c12845fca05ac72a7ac02a60-free.png" alt="Virtual Health Hubs Logo">
+        <h1>Virtual Health Hubs</h1>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+
+    <!--<div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>-->
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contac Us</a></li>
+        </ul>
+    </nav>   
+</header>
+  
 
   <!-- Blog Section -->
   <main class="blog">
-    <h1>Wellness Blog</h1>
-    <p>Explore the latest tips, guides, and stories to inspire your journey to better health and wellness.</p>
-    
-    <div class="blog-container">
-      <!-- Blog Post 1 -->
-      <div class="blog-post">
-        <img src="mental-wellness.jpg" alt="Mental Wellness Tips" class="blog-image">
-        <h2>Mental Wellness: 5 Daily Habits for a Stress-Free Life</h2>
-        <p>Discover simple daily habits that can help you reduce stress, boost your mood, and improve mental clarity.</p>
-        <a href="#" class="read-more">Read More</a>
+    <section class="blog-intro">
+      <h1>Wellness Blog</h1>
+      <p class="p">Explore the latest tips, guides, and stories to inspire your journey to better health and wellness.</p>
+      
+      <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+          <h2>Mental Wellness:  Daily Habits for a Stress-Free Life</h2>
+          <p>Discover simple daily habits that can help you reduce stress, boost your mood, and improve mental clarity.</p>
+          <a href="mental.html" class="read-more">Read More</a>
+        </div>
+  
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+          <h2>10-Minute Workouts to Keep You Active Anywhere</h2>
+          <p>No time for a long workout? Check out these quick routines that can be done at home or on the go.</p>
+          <a href="fitness.html" class="read-more">Read More</a>
+        </div>
+  
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+          <h2>Healthy Eating: Simple Recipes for Busy People</h2>
+          <p>These delicious, healthy recipes are quick to prepare and packed with nutrients to fuel your day.</p>
+          <a href="eating.html" class="read-more">Read More</a>
+        </div>
       </div>
-
-      <!-- Blog Post 2 -->
-      <div class="blog-post">
-        <img src="fitness-tips.jpg" alt="Fitness Tips" class="blog-image">
-        <h2>10-Minute Workouts to Keep You Active Anywhere</h2>
-        <p>No time for a long workout? Check out these quick routines that can be done at home or on the go.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-
-      <!-- Blog Post 3 -->
-      <div class="blog-post">
-        <img src="healthy-eating.jpg" alt="Healthy Eating" class="blog-image">
-        <h2>Healthy Eating: Simple Recipes for Busy People</h2>
-        <p>These delicious, healthy recipes are quick to prepare and packed with nutrients to fuel your day.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
+    </section>
+   
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Virtual Health Hubs. All rights reserved.</p>
-    <a href="references.html">References</a>
+    <p>&copy; <span id="currentYear"></span></p>
+    <p id="lastModified"></p>
+    <div class="footer-links">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#">Reference</a>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>

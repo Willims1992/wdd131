@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Virtual Health Hubs</title>
+    <meta name="description" content="Contact us for more information about our services and resources.">
+    <meta name="author" content="Ofonime A. William">
     <link rel="stylesheet" href="styles/contact-us.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="scripts/contact-us.js" defer></script>
 </head>
 <body>
@@ -22,11 +32,10 @@
         <button id="menu"></button>
         <nav class="navigation">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contac Us</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contac Us</a></li>
             </ul>
         </nav>   
 
@@ -34,7 +43,7 @@
     <main>
         <div>
             <h2>Contact Us</h2>
-            <form action="get" action="contact.html" class="form-container" id="contact-form">
+            <form action="get" action="contact-us.html" class="form-container" id="contact-form">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required placeholder="Enter your full name"> <br>
 
@@ -55,13 +64,13 @@
         </div>
     </main>
     <footer id="contact">
-        <p>&copy; 2025 Virtual Health Hubs. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p id="lastModified"></p>
         <div class="footer-links">
-          <a href="#">Social Media</a>
-          <a href="#">Site Map</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Reference</a>
-        </div>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#">Reference</a>
       </footer>
 </body>
 </html>

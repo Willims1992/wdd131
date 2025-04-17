@@ -14,6 +14,20 @@ hambutton.addEventListener('click', () => {
 
 });
 
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Output the copyright year in the first paragraph of the footer
+document.querySelector('footer p:first-of-type').textContent = `© ${currentYear} Ofonime A. William
+ Uyo Nigeria`;
+
+// Get the date the document was last modified
+const lastModified = document.lastModified;
+
+// Output the date the document was last modified in the second paragraph of the footer
+document.querySelector('footer p:nth-of-type(2)').textContent = `Last Modified: ${lastModified}`;
+
+
 
 
 const servicesData = [
@@ -21,25 +35,25 @@ const servicesData = [
       title: "Mental Wellness",
       description: "Access resources and support for mental health.",
       imageUrl: "https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600",
-      link: "#", // Example link
+      link: "https://www.mind.org.uk/", // Example link
     },
     {
       title: "Fitness Routines",
       description: "Find personalized fitness plans and tips.",
       imageUrl: "https://images.pexels.com/photos/31628657/pexels-photo-31628657/free-photo-of-man-in-black-sportswear-posing-at-gym.jpeg?auto=compress&cs=tinysrgb&w=600",
-      link: "#", // Example link
+      link: "https://www.nhs.uk/better-health/get-active/", // Example link
     },
     {
       title: "Nutritional Advice",
       description: "Get expert advice on healthy eating.",
       imageUrl: "https://images.pexels.com/photos/5816286/pexels-photo-5816286.jpeg?auto=compress&cs=tinysrgb&w=600",
-      link: "#", // Example link
+      link: "https://nutritionsource.hsph.harvard.edu/", // Example link
     },
   
     {title: "Virtual Healthcare",
     description: "Connect with healthcare professionals online.",
     imageUrl: "https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=600",
-    link: "#", // Example link
+    link: "https://telehealth.hhs.gov", // Example link
    },
 
 ];

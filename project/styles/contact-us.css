@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     padding: 20PX;
     background-color: var(--accent-color);
 } 
@@ -20,19 +20,24 @@ header {
        
 }
 
+h1, h2, h3{
+    font-family: 'poppin', sans-serif;
+}
+
 .logo img{
     width: 150px;
     border-radius: 50px;
 }
 
 button#menu {
-    font-size: 1.5rem;
+    font-size: 2rem;
     background: none;
     border: none;
     color: white;
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 1rem;
+    margin-left: 20px;
 }
 
 #menu{
@@ -44,35 +49,43 @@ button#menu::before {
     padding: 10px;
     font-size: larger;
     font-weight: bolder;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 button#menu.open::before {
     content: "✖"; /* Close Icon */
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 .nav-links {
     list-style: none;
     display: flex;
     flex-wrap:wrap ;
     justify-content: center;
-    gap: 30px;
+    gap: 5px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary-color);
-    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 0.5rem 2rem;
     display: block;
+    margin-right: 20px;
     font-weight: bold;
+    font-size: 19px;
+    border-radius: 20px;
   }
 
 .nav-links a:hover {
-    background-color: var(--primary-color);;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: black;
     font-weight: bold;
+    border-radius: 5px;
     transition: all 0.3s ease;
-    
 }
+
+
+
+
 
 
 
@@ -149,6 +162,9 @@ footer p {
 @media screen and (max-width: 600px) {
     button#menu {
         display: inline-block;
+        right: 30px;
+        top: 20px;
+        font-size: 2rem;
       }
     .form-container{
         width: 100%;
@@ -162,20 +178,35 @@ footer p {
         display: none;
         flex-direction: column;
         background-color: var(--accent-color);
+        color: var(--primary-color);
         padding: 10px;
         position: absolute;
         right: 15px;
-        left: 10px;
+        left: 5px;
         top: 100px;
         text-align: center;
         border-radius: 5px;
-        width: 80%;
+        width: 100%;
         z-index: 1000;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a{
+        background-color: var(--accent-color);
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+        color: var(--primary-color);
+    }
+
+    .nav-links a:hover {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        transition: all 0.3s ease;
     }
 
     .nav-links.open {
         display: flex; /* Show when open */
     }
-    
-}
+}    

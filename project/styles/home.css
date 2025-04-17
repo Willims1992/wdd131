@@ -18,6 +18,10 @@ body {
 
 }
 
+h1, h2, h3{
+    font-family: 'poppin', sans-serif;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -117,7 +121,22 @@ button#menu.open::before {
 
 
 
+.login{
+text-decoration: none;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    
+}
 
+.login:hover{
+
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
 
 /* Hero Section */
 .hero {
@@ -202,10 +221,10 @@ button#menu.open::before {
     transition: background-color 0.3s ease;
   }
   
-  a:hover {
+  /*hover {
     background-color: var(--primary-color);
     color: gold;
-  }
+  }*/
 
 .featured-news {
     width: 90%;
