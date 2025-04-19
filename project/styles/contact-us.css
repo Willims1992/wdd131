@@ -46,14 +46,14 @@ button#menu {
 
 button#menu::before {
     content: "\2261"; /* Hamburger Icon */
-    padding: 10px;
-    font-size: larger;
-    font-weight: bolder;
-    color: var(--primary-color);
+    padding: 10px;;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--accent-color);
 }
 button#menu.open::before {
     content: "✖"; /* Close Icon */
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 .nav-links {
     list-style: none;
@@ -82,12 +82,6 @@ button#menu.open::before {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-
-
-
-
-
-
 
 .form-container{
     display: flex;
@@ -154,7 +148,7 @@ footer p {
 
 .footer-links a {
     text-decoration: none;
-    color: #FF686B;
+    color: var(--accent-color);
     font-weight: bold;
     margin: 0 10px;
 }
@@ -162,16 +156,18 @@ footer p {
 @media screen and (max-width: 600px) {
     button#menu {
         display: inline-block;
-        right: 30px;
-        top: 20px;
+        left: 90px;
+        top: 40px;
         font-size: 2rem;
       }
     .form-container{
-        width: 100%;
+        width: 80%;
         padding: 10px;
+        margin-bottom: 10px;
+    
     }
     form input, form textarea{
-        width: 100%;
+        width: 80%;
     }
 
     .nav-links {
@@ -204,6 +200,10 @@ footer p {
         color: white;
         font-weight: bold;
         transition: all 0.3s ease;
+    }
+
+    button{
+        width: 90%;
     }
 
     .nav-links.open {
