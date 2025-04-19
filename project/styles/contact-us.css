@@ -116,11 +116,12 @@ form input, form textarea{
 
 button{
     background-color: var(--primary-color);
-    color: gold;
+    color: var(--accent-color);
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
     font-weight: bold;
 }
 
