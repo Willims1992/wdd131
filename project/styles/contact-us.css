@@ -6,7 +6,7 @@
 
 body{
     font-family: "Open Sans", sans-serif;
-    padding: 20PX;
+    padding: 20px;
     background-color: var(--accent-color);
 } 
 
@@ -21,7 +21,7 @@ header {
 }
 
 h1, h2, h3{
-    font-family: 'poppin', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo img{
@@ -46,7 +46,7 @@ button#menu {
 
 button#menu::before {
     content: "\2261"; /* Hamburger Icon */
-    padding: 10px;;
+    padding: 10px;
     font-weight: bold;
     font-size: 50px;
     color: var(--accent-color);
