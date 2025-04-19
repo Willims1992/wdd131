@@ -24,8 +24,8 @@ header {
     padding: 10px 20px;       
 }
 
-h1 h2 h3{
-    font-family: 'poppin', sans-serif;
+h1, h2, h3{
+    font-family: ' Poppins', sans-serif;
 }
 
 .logo{
@@ -101,25 +101,12 @@ button#menu.open::before {
     transition: all 0.3s ease;
 }
 
-
-
-
-
-
-
-
-
-  
-
 .service {
     width: 100%;
     height: 300px;
     border: 1px solid #ddd;
     overflow: hidden;
-    transform: 0.3 ease;
-    box-shadow: 0.3 ease;
-    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
-    transition: tra;
+    transition: all 0.3s ease;
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../image/pexels-cottonbro-4101137\ \(1\).webp) ;
     background-repeat: no-repeat;
     position: relative;
@@ -137,10 +124,7 @@ button#menu.open::before {
     height: 300px;
     border: 1px solid #ddd;
     overflow: hidden;
-    transform: 0.3 ease;
-    box-shadow: 0.3 ease;
-    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
-    transition: tra;
+    transition: all 0.3s ease;
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../image/pexels-rdne-8172941.webp) ;
     background-repeat: no-repeat;
     position: relative;
@@ -158,11 +142,8 @@ button#menu.open::before {
     height: 300px;
     border: 1px solid #ddd;
     overflow: hidden;
-    transform: 0.3 ease;
-    box-shadow: 0.3 ease;
-    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
-    transition: tra;
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(..//image/pexels-yaroslav-shuraev-8845070.webp) ;
+    transition: all 0.3s ease;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../image/pexels-yaroslav-shuraev-8845070.webp) ;
     background-repeat: no-repeat;
     position: relative;
     top: 10px;
@@ -178,10 +159,7 @@ button#menu.open::before {
     height: 300px;
     border: 1px solid #ddd;
     overflow: hidden;
-    transform: 0.3 ease;
-    box-shadow: 0.3 ease;
-    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
-    transition: tra;
+    transition: all 0.3s ease;
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../image/pexels-karolina-grabowska-7195084.webp) ;
     background-repeat: no-repeat;
     position: relative;
@@ -201,7 +179,6 @@ button#menu.open::before {
 .service a{
     background-color: var(--primary-color);
     padding: 15px;
-    box-shadow: 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -213,7 +190,6 @@ button#menu.open::before {
 .service1 a{
     background-color: var(--primary-color);
     padding: 15px;
-    box-shadow: 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -225,7 +201,6 @@ button#menu.open::before {
 .service2 a{
     background-color: var(--primary-color);
     padding: 15px;
-    box-shadow: 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -236,7 +211,6 @@ button#menu.open::before {
 .service3 a{
     background-color: var(--primary-color);
     padding: 15px;
-    box-shadow: 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -250,11 +224,21 @@ button#menu.open::before {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px; /* Adjusted to avoid overlap with header */
+    background-color: var(--accent-color);
+}
 
 
 .service-container h2{
     text-align: center;
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
     padding: 40px;
 }
 
@@ -292,6 +276,11 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 500px) {
+    .grid-section{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column sizes */
+        gap: 10px; /* Reduces spacing between grid items */
+    
+    }
     button#menu {
         display: inline-block;
         right: 30px;
@@ -313,7 +302,6 @@ footer p {
         border-radius: 5px;
         width: 100%;
         z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links a{
