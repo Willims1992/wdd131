@@ -446,7 +446,7 @@ footer p {
         grid-template-columns: 1fr;
     }
     
-    .nav-links {
+      .nav-links {
         display: none;
         flex-direction: column;
         background-color: var(--accent-color);
