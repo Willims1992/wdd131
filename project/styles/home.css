@@ -144,16 +144,25 @@ button#menu.open::before {
     background-color: var(--accent-color);
     color: white;
     text-align: center;
-    height: 170vh;
+    height: auto;
     margin-top: 100px;
     padding: 50px 20px;
 } 
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+
 
 .hero img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease;
     filter: brightness(0.8); /* Darkens the image */
     
 }
@@ -163,33 +172,33 @@ button#menu.open::before {
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 20px;
-    top: 30%;
+    top: 20%;
     left: 60px;
+    font-size: 1rem;
     border: 1px solid var(--accent-color);
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 
+
+
 .hero-overlay a{
-    font-weight: bolder;
-}
-
-
-
-.hero-overlay .cta{
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 30px;
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
     text-decoration: none;
     border-radius: 30px;
     display: inline-block
 }
 
-.hero-overlay .cta:hover{
-    color: black;
+
+.hero-overlay a:hover{
     text-decoration: underline;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     display: inline-block
 }
@@ -215,7 +224,7 @@ button#menu.open::before {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid #005f5f;
+    border: 5px solid #005f5f;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
@@ -426,9 +435,8 @@ footer p {
     }
 
     .hero-overlay h2 {
-        top: 20%;
-        left: 30px;
-        font-size: 1.2rem; /* Adjust font size */
+        top: 23%;
+
     
     }
     .grid-c-2{
