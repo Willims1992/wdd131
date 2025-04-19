@@ -172,10 +172,28 @@ button#menu.open::before {
     padding-top: 10px;
 }
 
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarges the service box on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
+    transition: all 0.3s ease;
+}
+.service1:hover{
+    transform: scale(1.05);
+    box-shadow:0 0.4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 
-
+.service2:hover {
+    transform: scale(1.05); /* Slightly enlarges the service box on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
+    transition: all 0.3s ease;
+}
+.service3:hover {
+    transform: scale(1.05); /* Slightly enlarges the service box on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
+    transition: all 0.3s ease;
+}
 .service a{
     background-color: var(--primary-color);
     padding: 15px;
@@ -223,6 +241,25 @@ button#menu.open::before {
     background-color: var(--accent-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+
+}
+
+.service1 a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+.service2 a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.service3 a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 .service-container{
     display: flex;
@@ -243,13 +280,14 @@ button#menu.open::before {
 }
 
 .grid-section{
-        display: grid; /* Enables grid layout */
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive column sizes */
-        gap: 20px; /* Adds spacing between grid items */
-        padding: 20px; /* Adds padding around the grid */
-        justify-content: center; /* Centers the grid horizontally */
-        margin-bottom: 5px;
+    display: grid; /* Enables grid layout */
+    grid-template-columns:1fr 1fr; /* Responsive column sizes */
+    gap: 15px; /* Adds spacing between grid items */
+    padding: 20px; /* Adds padding around the grid */
+    height: auto;
 }
+
+
 
 footer {
     background-color: var(--primary-color);
