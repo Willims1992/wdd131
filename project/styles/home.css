@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3{
-    font-family: 'poppin', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -122,7 +122,7 @@ button#menu.open::before {
 
 
 .login{
-text-decoration: none;
+    text-decoration: none;
     padding: 20px;
     padding-top: 30px;
     font-size: 20px;
@@ -144,7 +144,7 @@ text-decoration: none;
     background-color: var(--accent-color);
     color: white;
     text-align: center;
-    height: 150%;
+    height: 170vh;
     margin-top: 100px;
     padding: 50px 20px;
 } 
@@ -178,9 +178,9 @@ text-decoration: none;
 
 
 .hero-overlay .cta{
-    background-color: var(--primary-color);
-    color: white;
+    color: var(--primary-color);
     padding: 30px;
+    font-size: 30px;
     margin-top: 20px;
     text-decoration: none;
     border-radius: 30px;
@@ -188,9 +188,8 @@ text-decoration: none;
 }
 
 .hero-overlay .cta:hover{
-    background-color: var(--accent-color);
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
     border-radius: 5px;
     display: inline-block
 }
@@ -308,32 +307,23 @@ text-decoration: none;
     gap: 10px; /* Adds spacing between grid items */
     padding: 20px; /* Adds padding around the grid */
     justify-content: center; /* Centers the grid horizontally */
-  }
-  
-  /* Card styling */
-  .service-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
 }
   
-  .service-card:hover {
+
+
+  
+.service-card:hover {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Emphasized shadow on hover */
 }
   
-  .service-card img {
+.service-card img {
     width: 100%;
     height: 200px;
     object-fit: cover; /* Ensures images fill their container without distortion */
   }
   
-  .service-card h3 {
+.service-card h3 {
     margin: 10px 0;
     font-size: 1.5rem;
     color: #005f5f;
