@@ -106,8 +106,16 @@ label{
     font-weight: bold;
 }
 
-form input, form textarea{
+form input{
     padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 90%;
+    resize: vertical;
+}
+
+form textarea{
+    padding: 20px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     width: 90%;
@@ -126,7 +134,7 @@ button{
 }
 
 button:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: black;
     
 
