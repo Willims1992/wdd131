@@ -4,13 +4,6 @@
     --accent-color: white;
 }
 
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-   
-    /* Global Styles */
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -28,16 +21,18 @@ header {
     z-index: 2000;
     width: 100%;
     height: 150px;
-    color: white;
+    color: var(--accent-color);
     padding: 10px 20px;       
 }
 
 h1, h2, h3{
-    font-family: 'poppin', sans-serif;
+    font-family: 'poppins', sans-serif;
 
 }
 .logo{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     padding-top: 10px;
 }
@@ -56,6 +51,7 @@ h1, h2, h3{
 
 button#menu {
     font-size: 2rem;
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -63,11 +59,10 @@ button#menu {
     top: 2rem;
     right: 1rem;
     margin-left: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-#menu{
-    display: none;
-}
 
 button#menu::before {
     content: "\2261"; /* Hamburger Icon */
@@ -85,6 +80,7 @@ button#menu.open::before {
     display: flex;
     flex-wrap:wrap ;
     justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 
@@ -109,33 +105,41 @@ button#menu.open::before {
 }
 
 
-
-
-
 .blog {
     position: relative;
     text-align: center;
     height: 150%;
     margin-top: 100px;
     padding: 50px 20px;
-} 
+}
+
 
 .blog-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px;
-
+    border: 2px solid var(--accent-color);
+    
+    color: var(--accent-color);
+    border-radius: 50px;
+    gap: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .blog-post{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
     background-color: var(--primary-color);
-    border: 2px solid var(--accent-color);
-    color: var(--accent-color);
-    border-radius: 100px;
-    gap: 10px;
+    
+    border-radius: 10px;
+    
 }
+
+.postp{
+    color: white;
+    text-align: center;
+}
+
+
 
 .blog-post a{
     text-decoration: none;
@@ -146,12 +150,17 @@ button#menu.open::before {
     text-align: center;
 }
 
+.blog-post h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .blog-post a:hover{
     background-color: var(--accent-color);
     color: black;
-    font-weight: bold;
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .blog-intro h1{
@@ -160,7 +169,7 @@ button#menu.open::before {
     margin-bottom: 20px;
 }
 
-.blog-intro, .p{
+.intro-p{
     font-size: 1.2rem;
     color: black;
     margin-bottom: 20px;
@@ -168,7 +177,7 @@ button#menu.open::before {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent-color);
     text-align: center;
     padding: 20px 0;
     position: relative;
