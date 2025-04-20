@@ -229,10 +229,7 @@ button#menu.open::before {
     transition: background-color 0.3s ease;
   }
   
-  /*hover {
-    background-color: var(--primary-color);
-    color: gold;
-  }*/
+  
 
 .featured-news {
     width: 90%;
@@ -295,7 +292,7 @@ button#menu.open::before {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid gold;
+    border: 1px solid var(--accent-color);
     transition:  0.3s ease;
 }
 .quick-links a:hover {
@@ -330,15 +327,11 @@ button#menu.open::before {
     width: 100%;
     height: 200px;
     object-fit: cover; /* Ensures images fill their container without distortion */
-  }
+}
   
-.service-card h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-    color: #005f5f;
-  }
+
   
-  .service-card p {
+.service-card p {
     font-size: 1rem;
     color: #555;
     padding: 0 10px 10px;
@@ -385,10 +378,6 @@ button#menu.open::before {
     transform: scale(1.05); /* Slight zoom effect */
 }
   
-.service-card p {
-    color: #555;
-    font-size: 1em;
-}
 
 .service-card img {
     width: 100%;

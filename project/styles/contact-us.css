@@ -29,16 +29,7 @@ h1, h2, h3{
     border-radius: 50px;
 }
 
-button#menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-    margin-left: 20px;
-}
+
 
 #menu{
     display: none;
@@ -164,11 +155,18 @@ footer p {
 
 @media screen and (max-width: 600px) {
     button#menu {
+        background: none;
+        border: none;
+        color: white;
+        position: absolute;
+        margin-left: 20px;
         display: inline-block;
         left: 90px;
         top: 40px;
         font-size: 2rem;
-      }
+          
+    }
+    
     .form-container{
         width: 80%;
         padding: 10px;
@@ -207,8 +205,7 @@ footer p {
     .nav-links a:hover {
         background-color: var(--primary-color);
         color: white;
-        font-weight: bold;
-        transition: all 0.3s ease;
+        transition:all 0.3s ease;
     }
 
     button{
